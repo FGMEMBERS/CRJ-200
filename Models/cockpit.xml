@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>cockpit.ac</path>
+
+  <animation>
+  <type>rotate</type>
+  <object-name>ThrLever01</object-name>
+  <object-name>ThrLever02</object-name>
+  <object-name>ThrReverse01</object-name>
+  <object-name>ThrReverse02</object-name>
+  <property>controls/engines/engine/throttle</property>
+  <factor>-45</factor>
+  <center>
+   <x-m>-9.84</x-m>
+   <y-m>0</y-m>
+   <z-m>0.544</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>rotate</type>
+  <object-name>ThrReverse01</object-name>
+  <object-name>ThrReverse02</object-name>
+  <property>controls/engines/engine/reverser[0]</property>
+   <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0.0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>40.0</dep>
+    </entry>
+   </interpolation>
+  <center>
+   <x-m>-9.82</x-m>
+   <y-m>0.0</y-m>
+   <z-m>0.567</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>rotate</type>
+  <object-name>GearLever</object-name>
+  <property>controls/gear/gear-down</property>
+  <factor>30</factor>
+  <center>
+   <x-m>-9.985</x-m>
+   <y-m>0</y-m>
+   <z-m>0.58</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>rotate</type>
+  <object-name>FlapLever</object-name>
+  <property>controls/flight/flaps</property>
+    <interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1.0</ind>
+      <dep>60.0</dep>
+    </entry>
+</interpolation>
+  <center>
+   <x-m>-9.84</x-m>
+   <y-m>0</y-m>
+   <z-m>0.544</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>rotate</type>
+  <object-name>SpdBrkLever</object-name>
+  <property>controls/flight/speedbrake</property>
+<interpolation>
+    <entry>
+      <ind>0</ind>
+      <dep>0</dep>
+    </entry>
+    <entry>
+      <ind>1</ind>
+      <dep>50</dep>
+    </entry>
+</interpolation>
+  <center>
+   <x-m>-9.84</x-m>
+   <y-m>0</y-m>
+   <z-m>0.544</z-m>
+  </center>
+  <axis>
+   <x>0</x>
+   <y>1</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>material</type>
+  <object-name>cockpit.001</object-name>
+  <object-name>panel</object-name>
+  <object-name>OHexit</object-name>
+  <object-name>CDU</object-name>
+  <object-name>SpdBrkLever</object-name>
+  <object-name>GearLever</object-name>
+  <object-name>FlapLever</object-name>
+  <object-name>ThrLever01</object-name>
+  <object-name>ThrLever02</object-name>
+  <object-name>ThrReverse01</object-name>
+  <object-name>ThrReverse02</object-name>
+  <emission>
+    <red>0.6</red>
+    <green>0.6</green>
+    <blue>0.6</blue>
+    <factor-prop>controls/switches/dome-lights[0]</factor-prop>	
+  </emission>
+</animation>
+
+</PropertyList>
