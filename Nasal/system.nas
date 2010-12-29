@@ -214,6 +214,14 @@ if(getprop("/controls/flight/spoiler") == 3) {
  setprop("/controls/flight/ob-speedbrake", 1);
 }
 
+#gpws only audible in cockpit
+if(getprop("/sim/current-view/cockpit") == 1) {
+ setprop("/instrumentation/mk-viii/speaker/volume",.4);
+}
+if(getprop("/sim/current-view/cockpit") == 0) {
+ setprop("/instrumentation/mk-viii/speaker/volume",0);
+}
+
 settimer(update_systems,0);
 }
 settimer(update_systems,0);

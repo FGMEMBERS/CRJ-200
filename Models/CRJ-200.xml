@@ -16,7 +16,7 @@
 
 <model>
  <name>Pushback</name>
- <path>Models\Airport\Pushback\Goldhofert.xml</path>
+ <path>Aircraft\CRJ-200\Models\Pushback\Goldhofert.xml</path>
  <offsets>
   <x-m>-10.1</x-m>
   <y-m>0</y-m>
@@ -31,17 +31,17 @@
 
 <model>
  <name>Flightdeck</name>
- <path>Aircraft/CRJ-200/Models/flightdeck.xml</path>
+ <path>Aircraft/CRJ-200/Models/Cockpit/flightdeck.xml</path>
 </model>
 
 <model>
  <name>Cockpit</name>
- <path>Aircraft/CRJ-200/Models/cockpit.xml</path>
+ <path>Aircraft/CRJ-200/Models/Cockpit/cockpit.xml</path>
 </model>
 
  <model>
   <name>PFD</name>
-  <path>Aircraft/CRJ-200/Models/Instruments/pfd.xml</path>
+  <path>Aircraft/CRJ-200/Models/Cockpit/pfd.xml</path>
   <offsets>
    <x-m>-10.13</x-m>
    <y-m>-0.50</y-m>
@@ -51,7 +51,7 @@
 
  <model>
   <name>stby-ai</name>
-  <path>Aircraft/CRJ-200/Models/Instruments/stby-ai.xml</path>
+  <path>Aircraft/CRJ-200/Models/Cockpit/stby-ai.xml</path>
   <offsets>
    <x-m>-10.13</x-m>
    <y-m>0.0</y-m>
@@ -61,7 +61,7 @@
 
  <model>
   <name>stby-alt</name>
-  <path>Aircraft/CRJ-200/Models/Instruments/stby-alt.xml</path>
+  <path>Aircraft/CRJ-200/Models/Cockpit/stby-alt.xml</path>
   <offsets>
    <x-m>-10.13</x-m>
    <y-m>0.0</y-m>
@@ -91,7 +91,7 @@
 
  <model>
   <name>pfd</name>
-  <path>Aircraft/CRJ-200/Models/Instruments/pfd.xml</path>
+  <path>Aircraft/CRJ-200/Models/Cockpit/pfd.xml</path>
   <offsets>
    <x-m>-10.13</x-m>
    <y-m>0.50</y-m>
