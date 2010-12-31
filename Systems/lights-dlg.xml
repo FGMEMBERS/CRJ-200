@@ -5,26 +5,26 @@
 	<name>lights-dlg</name>
 	<layout>vbox</layout>
 
-	<group>
-		<layout>hbox</layout>
-		<text>
-			<label>CRJ-200 Lights</label>
-		</text>
+	<group>
+		<layout>hbox</layout>
+		<text>
+			<label>CRJ-200 Lights</label>
+		</text>
 
-		<empty>
-			<stretch>true</stretch>
-		</empty>
-
-		<button>
-			<legend/>
-			<key>Esc</key>
-			<pref-width>16</pref-width>
-			<pref-height>16</pref-height>
-			<border>2</border>
-			<binding>
-				<command>dialog-close</command>
-			</binding>
-		</button>
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+
+		<button>
+			<legend/>
+			<key>Esc</key>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<border>2</border>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
 	</group>
 
 	<hrule />
