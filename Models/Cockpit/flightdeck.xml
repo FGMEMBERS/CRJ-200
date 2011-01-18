@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0"?>
 
 <PropertyList>
@@ -108,3 +109,115 @@
 </animation>
 
 </PropertyList>
+=======
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>flightdeck.ac</path>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Yoke</object-name>
+   <property>controls/flight/elevator</property>
+   <factor>10</factor>
+   <center>
+    <x-m>-9.87</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.25</z-m>
+   </center>
+   <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+   </axis>
+  </animation>
+ 
+ <animation>
+  <type>rotate</type>
+   <object-name>Yoke1</object-name>
+   <property>controls/flight/elevator</property>
+   <factor>10</factor>
+   <center>
+    <x-m>-9.87</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.25</z-m>
+   </center>
+   <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+   </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+   <object-name>Yoke2</object-name>
+   <property>controls/flight/elevator</property>
+   <factor>10</factor>
+   <center>
+    <x-m>-9.87</x-m>
+    <y-m>0.0</y-m>
+    <z-m>0.25</z-m>
+   </center>
+   <axis>
+    <x>0.0</x>
+    <y>-1.0</y>
+    <z>0.0</z>
+   </axis>
+  </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>Yoke1</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>30</factor>
+  <center>
+   <x-m>-9.82</x-m>
+   <y-m>-0.35</y-m>
+   <z-m>0.815</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+ 
+ <animation>
+  <type>rotate</type>
+  <object-name>Yoke2</object-name>
+  <property>controls/flight/aileron</property>
+  <factor>30</factor>
+  <center>
+   <x-m>-9.87</x-m>
+   <y-m>0.35</y-m>
+   <z-m>0.815</z-m>
+  </center>
+  <axis>
+   <x>-1.0</x>
+   <y>0.0</y>
+   <z>0.0</z>
+  </axis>
+ </animation>
+
+  <animation>
+  <type>material</type>
+  <object-name>cockpit</object-name>
+  <object-name>Seats</object-name>
+  <object-name>Glareshield</object-name>
+  <object-name>cockpit.001</object-name>
+  <object-name>OHexit</object-name>
+  <object-name>Yoke</object-name>
+  <object-name>Yoke1</object-name>
+  <object-name>Yoke2</object-name>
+  <emission>
+    <red>0.6</red>
+    <green>0.6</green>
+    <blue>0.6</blue>
+    <factor-prop>sim/multiplay/generic/float[9]</factor-prop>	
+  </emission>
+</animation>
+
+</PropertyList>
+>>>>>>> df5efa3... Added missing CRJ200 files from last commit
