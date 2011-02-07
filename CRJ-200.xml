@@ -23,7 +23,7 @@ Mach 1 = 576.6 kt @ 35,000 ft -->
 <airplane mass="30900">
 
 <!-- Approach configuration -->
-	<approach speed="140" aoa="3" fuel=".2">
+	<approach speed="138" aoa="3" fuel=".2">
 		<control-setting axis="/controls/engines/engine[0]/throttle" value="0.5"/>
 		<control-setting axis="/controls/engines/engine[1]/throttle" value="0.5"/>
 		<control-setting axis="/controls/flight/flaps" value="1.0"/>
@@ -36,7 +36,7 @@ Mach 1 = 576.6 kt @ 35,000 ft -->
 <!-- Cruise configuration. The CRJ has a service ceiling of 41000 feet. Bad 
 things have happened when pilots try to join the "40000 club," but those 
 can't be modeled in FlightGear without extremely complicated scripts.-->
-	<cruise speed="437" alt="35000" fuel=".75">
+	<cruise speed="437" alt="35000" fuel=".8" aoa="0">
 		<control-setting axis="/controls/engines/engine[0]/throttle" value="0.8"/>
 		<control-setting axis="/controls/engines/engine[1]/throttle" value="0.8"/>
 		<control-setting axis="/controls/flight/flaps" value="0.0"/>
@@ -72,9 +72,9 @@ rear cone. Plus some pieces to make up the engine nacelles.-->
 	<!--The wing. The real wing has a 2-segment geometry, this is modeled here.-->
 
 	<!--inboard segment-->
-	<wing x="-.75" y="1.5" z="-0.35" length="2.63" chord="4.9" sweep="20.5" taper=".615" dihedral="2.5" camber=".1" incidence="4" twist="-2.0" idrag="1.0">
-		<stall aoa="13" width="7" peak="0.8"/>
-		<flap0 start="0" end="1" lift="1.65" drag="1.5"/>
+	<wing x="-.75" y="1.5" z="-0.35" length="2.63" chord="4.9" sweep="20.5" taper=".615" dihedral="2.5" camber=".1" incidence="4" twist="-2.0" idrag="1.1">
+		<stall aoa="17" width="8" peak=".8"/>
+		<flap0 start="0" end="1" lift="1.72" drag="0.9"/>
 		<spoiler start="0.22" end="1" lift="0.2" drag="2.0"/>
 		<control-input axis="/controls/flight/flaps" control="FLAP0"/>
 		<control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -90,10 +90,10 @@ rear cone. Plus some pieces to make up the engine nacelles.-->
 	</wing>
 
 	<!--outboard segment-->
-	<mstab x="-1.67" y="3.96" z="-0.307" length="7.8" chord="3.05" sweep="22.2" taper=".45" dihedral="3.2" camber=".1" incidence="2" twist="-1" idrag="1">
-		<stall aoa="13" width="7" peak="0.8"/>
-		<flap0 start="0.015" end=".513" lift="1.52" drag="1.4"/>
-		<flap1 start=".513" end=".79" lift="1.1" drag="1.4"/>
+	<mstab x="-1.67" y="3.96" z="-0.307" length="7.8" chord="3.05" sweep="22.2" taper=".45" dihedral="3.2" camber=".1" incidence="2" twist="-1" idrag="1.1">
+		<stall aoa="17" width="8" peak=".8"/>
+		<flap0 start="0.015" end=".513" lift="1.6" drag="0.9"/>
+		<flap1 start=".513" end=".79" lift="1.15" drag="1.4"/>
 		<spoiler start="0.08" end=".5" lift="0.2" drag="2.0"/>
 		<control-input axis="/controls/flight/flaps" control="FLAP0"/>
 		<control-input axis="/controls/flight/aileron" control="FLAP1" split="true"/>
@@ -111,11 +111,11 @@ rear cone. Plus some pieces to make up the engine nacelles.-->
 	</mstab>
 
 	<!--Winglets-->
-	<mstab x="-4.8" y="11.15" z="0" chord="1" length="1.53" taper=".45" sweep="22.5" dihedral="78"/>
+	<mstab x="-4.8" y="11.15" z="0" chord="1" length="1.53" taper=".45" sweep="22.5" dihedral="78" idrag="-.5"/>
 
 	<!--The CRJ has a T-tail design-->
-	<hstab x="-14.95" y="0.15" z="4.7" chord="2.3" length="3.5" taper=".44" sweep="20" dihedral="-1" effectiveness="2" camber="0">
-		<stall aoa="30" width="7" peak="1.5"/>
+	<hstab x="-14.95" y="0.15" z="4.7" chord="2.3" length="3.5" taper=".44" sweep="20" dihedral="-1" effectiveness="2">
+		<stall aoa="30" width="12" peak="1.5"/>
 		<flap0 start="0" end=".93" lift="1.43" drag="1.2"/>
 		<control-input axis="/controls/flight/elevator" control="FLAP0"/>
 		<control-input axis="/controls/flight/elevator-trim" control="FLAP0"/>
@@ -163,7 +163,7 @@ rear cone. Plus some pieces to make up the engine nacelles.-->
 		<control-output control="STEER" prop="gear/gear[0]/steering-norm"/>
 	</gear>
 
-	<gear x="-2.37" y="1.675" z="-1.8" spring=".5" compression="0.6" >
+	<gear x="-2.37" y="1.675" z="-1.87" spring=".5" compression="0.5" >
 		<control-input axis="/controls/gear/brake-left" control="BRAKE"/>
 		<control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
 		<control-input axis="/controls/gear/autobrake" control="BRAKE"/>
@@ -172,7 +172,7 @@ rear cone. Plus some pieces to make up the engine nacelles.-->
 		<control-speed control="EXTEND" transition-time="7"/>
 	</gear>
 
-	<gear x="-2.37" y="-1.675" z="-1.8" spring=".5" compression="0.6">
+	<gear x="-2.37" y="-1.675" z="-1.87" spring=".5" compression="0.5">
 		<control-input axis="/controls/gear/brake-right" control="BRAKE"/>
 		<control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
 		<control-input axis="/controls/gear/autobrake" control="BRAKE"/>

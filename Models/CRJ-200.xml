@@ -253,7 +253,7 @@
    <object-name>rhlightedelevator</object-name>
    <condition>
    <and>
-     <property>controls/switches/logo-lights</property>
+     <property>sim/multiplay/generic/int[6]</property>
     <not>
     <property>sim/crashed</property>
     </not>
@@ -270,7 +270,7 @@
    <object-name>rhlightedwinglet</object-name>
    <condition>
    <and>
-     <property>controls/switches/wing-lights</property>
+     <property>sim/multiplay/generic/int[4]</property>
     <not>
     <property>sim/crashed</property>
     </not>
@@ -284,8 +284,8 @@
    <condition>
    <and>
     <or>
-     <property>controls/switches/landing-light-l</property>
-     <property>controls/switches/taxi-lights</property>
+     <property>sim/multiplay/generic/int[1]</property>
+     <property>sim/multiplay/generic/int[7]</property>
     </or>
     <not>
     <property>sim/crashed</property>
@@ -299,7 +299,7 @@
    <object-name>LHLL</object-name>
    <condition>
    <and>
-     <property>controls/switches/landing-light-l</property>
+     <property>sim/multiplay/generic/int[1]</property>
    <not>
    <property>sim/crashed</property>
    </not>
@@ -310,9 +310,10 @@
  <animation>
    <type>select</type>
    <object-name>LHTL</object-name>
+   <object-name>RHTL</object-name>
    <condition>
    <and>
-     <property>controls/switches/taxi-lights</property>
+     <property>sim/multiplay/generic/int[7]</property>
    <not>
    <property>sim/crashed</property>
    </not>
@@ -326,8 +327,8 @@
    <condition>
    <and>
     <or>
-     <property>controls/switches/landing-light-r</property>
-     <property>controls/switches/taxi-lights</property>
+     <property>sim/multiplay/generic/int[3]</property>
+     <property>sim/multiplay/generic/int[7]</property>
     </or>
     <not>
     <property>sim/crashed</property>
@@ -338,23 +339,10 @@
 
  <animation>
    <type>select</type>
-   <object-name>RHTL</object-name>
-   <condition>
-   <and>
-     <property>controls/switches/taxi-lights</property>
-   <not>
-   <property>sim/crashed</property>
-   </not>
-   </and>
-   </condition>
- </animation>
-
- <animation>
-   <type>select</type>
    <object-name>RHLL</object-name>
    <condition>
      <and>
-     <property>controls/switches/landing-light-r</property>
+     <property>sim/multiplay/generic/int[3]</property>
      <not>
      <property>sim/crashed</property>
      </not>
@@ -367,7 +355,7 @@
    <object-name>NLL</object-name>
    <condition>
      <and>
-     <property>controls/switches/landing-light-c</property>
+     <property>sim/multiplay/generic/int[2]</property>
      <not>
      <property>sim/crashed</property>
      </not>
@@ -383,7 +371,7 @@
   <object-name>UBL</object-name>
    <condition>
    <and>
-    <property>sim/model/CRJ-200/lighting/beacon/state</property>
+    <property>sim/multiplay/generic/int[0]</property>
    <not>
    <property>sim/crashed</property>
    </not>
@@ -398,7 +386,7 @@
   <object-name>TSL</object-name>
    <condition>
    <and>
-    <property>sim/model/CRJ-200/lighting/strobe/state</property>
+    <property>sim/multiplay/generic/int[8]</property>
    <not>
    <property>sim/crashed</property>
    </not>
@@ -412,7 +400,7 @@
    <object-name>RHWL</object-name>
    <condition>
    <and>
-     <property>controls/switches/wing-lights</property>
+     <property>sim/multiplay/generic/int[4]</property>
      <not>
      <property>sim/crashed</property>
      </not>
@@ -428,7 +416,7 @@
   <object-name>UTNL</object-name>
    <condition>
    <and>
-  <property>controls/switches/nav-lights</property>
+  <property>sim/multiplay/generic/int[5]</property>
    <not>
    <property>sim/crashed</property>
    </not>
@@ -780,7 +768,7 @@
     <red>1</red>
     <green>0</green>
     <blue>0</blue>
-  <factor-prop>controls/switches/nav-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
   </emission>
  </animation>
 
@@ -791,7 +779,7 @@
     <red>0</red>
     <green>1</green>
     <blue>0.2</blue>
-  <factor-prop>controls/switches/nav-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
   </emission>
  </animation>
 
@@ -802,7 +790,7 @@
     <red>1</red>
     <green>0</green>
     <blue>0</blue>
-  <factor-prop>controls/switches/nav-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
   </emission>
  </animation>
 
@@ -813,7 +801,7 @@
     <red>0</red>
     <green>1</green>
     <blue>0.2</blue>
-  <factor-prop>controls/switches/nav-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
   </emission>
  </animation>
 
@@ -825,7 +813,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/nav-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[5]</factor-prop>
   </emission>
  </animation>
 
@@ -836,7 +824,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/logo-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[6]</factor-prop>
   </emission>
  </animation>
 
@@ -848,7 +836,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/taxi-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[7]</factor-prop>
   </emission>
  </animation>
 
@@ -859,7 +847,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/landing-light-l</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[1]</factor-prop>
   </emission>
  </animation>
 
@@ -870,7 +858,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/landing-light-r</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[3]</factor-prop>
   </emission>
  </animation>
 
@@ -881,7 +869,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/wing-lights</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[4]</factor-prop>
   </emission>
  </animation>
 
@@ -892,7 +880,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/landing-light-l</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[1]</factor-prop>
   </emission>
  </animation>
 
@@ -903,7 +891,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/landing-light-c</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[2]</factor-prop>
   </emission>
  </animation>
 
@@ -914,7 +902,7 @@
     <red>1</red>
     <green>0.94</green>
     <blue>0.9</blue>
-  <factor-prop>controls/switches/landing-light-r</factor-prop>
+  <factor-prop>sim/multiplay/generic/int[3]</factor-prop>
   </emission>
  </animation>
 
@@ -1063,8 +1051,8 @@
   <object-name>ngstrut</object-name>
   <object-name>ngltorque</object-name>
   <object-name>ngutorque</object-name>
-  <property>controls/flight/rudder</property>
-  <factor>50</factor>
+  <property>surface-positions/rudder-pos-norm</property>
+  <factor>-50</factor>
   <center>
    <x-m>-10.1</x-m>
    <y-m>0.0</y-m>
@@ -1073,7 +1061,7 @@
   <axis>
    <x>0</x>
    <y>0</y>
-   <z>-1.0</z>
+   <z>1.0</z>
   </axis>
  </animation>
 
@@ -1082,7 +1070,7 @@
   <object-name>ngltorque</object-name>
   <object-name>nosegear</object-name>
   <object-name>ngstrut</object-name>
-  <property>gear/gear/compression-m</property>
+  <property>sim/multiplay/generic/float[0]</property>
    <factor>1</factor>
   <axis>
    <x>0</x>
@@ -1094,7 +1082,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ngltorque</object-name>
-  <property>gear/gear/compression-norm</property>
+  <property>sim/multiplay/generic/float[8]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
@@ -1124,7 +1112,7 @@
  <animation>
   <type>rotate</type>
   <object-name>ngutorque</object-name>
-  <property>gear/gear/compression-norm</property>
+  <property>sim/multiplay/generic/float[0]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
@@ -1154,7 +1142,7 @@
 <animation>
 	<type>spin</type>
 	<object-name>nosegear</object-name>
-	<property>gear/gear[0]/rollspeed-ms</property>
+	<property>sim/multiplay/generic/float[5]</property>
 	<factor>10</factor>
 	<center>
 		<x-m>-10.098</x-m>
@@ -1226,18 +1214,27 @@
  <animation>
   <type>rotate</type>
   <object-name>LHArm</object-name>
-  <property>gear/gear[1]/compression-m</property>
+  <object-name>leftmaingear</object-name>
+  <property>sim/multiplay/generic/float[1]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
+      <ind>0.1</ind>
+      <dep>17</dep>
+    </entry>
+    <entry>
+	<ind>0.225</ind>
       <dep>35</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
+      <ind>0.3</ind>
+      <dep>45</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
       <dep>58</dep>
     </entry>
   </interpolation>
@@ -1255,22 +1252,29 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>leftmaingear</object-name>
   <object-name>LHLowerShock</object-name>
   <object-name>LHUpperShock</object-name>
-  <property>gear/gear[1]/compression-m</property>
+  <property>sim/multiplay/generic/float[1]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
-      <dep>9.3</dep>
+      <ind>0.1</ind>
+      <dep>5.2</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
-      <dep>15.5</dep>
+      <ind>0.225</ind>
+      <dep>10</dep>
+    </entry>
+    <entry>
+      <ind>0.3</ind>
+      <dep>12</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
+      <dep>13.6</dep>
     </entry>
   </interpolation>
   <center>
@@ -1287,21 +1291,28 @@
 
  <animation>
   <type>translate</type>
-  <object-name>leftmaingear</object-name>
   <object-name>LHLowerShock</object-name>
-  <property>gear/gear[1]/compression-m</property>
+  <property>sim/multiplay/generic/float[1]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
-      <dep>0.19</dep>
+      <ind>0.1</ind>
+      <dep>0.075</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
-      <dep>0.32</dep>
+      <ind>0.225</ind>
+      <dep>0.183</dep>
+    </entry>
+    <entry>
+      <ind>0.3</ind>
+      <dep>0.25</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
+      <dep>0.34</dep>
     </entry>
   </interpolation>
   <axis>
@@ -1314,7 +1325,7 @@
 <animation>
 	<type>spin</type>
 	<object-name>leftmaingear</object-name>
-	<property>gear/gear[1]/rollspeed-ms</property>
+	<property>sim/multiplay/generic/float[6]</property>
 	<factor>10</factor>
 	<center>
 		<x-m>2.369</x-m>
@@ -1386,18 +1397,27 @@
  <animation>
   <type>rotate</type>
   <object-name>RHArm</object-name>
-  <property>gear/gear[2]/compression-m</property>
+  <object-name>rightmaingear</object-name>
+  <property>sim/multiplay/generic/float[2]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
+      <ind>0.1</ind>
+      <dep>17</dep>
+    </entry>
+    <entry>
+	<ind>0.225</ind>
       <dep>35</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
+      <ind>0.3</ind>
+      <dep>45</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
       <dep>58</dep>
     </entry>
   </interpolation>
@@ -1415,22 +1435,29 @@
 
  <animation>
   <type>rotate</type>
-  <object-name>rightmaingear</object-name>
   <object-name>RHLowerShock</object-name>
   <object-name>RHUpperShock</object-name>
-  <property>gear/gear[2]/compression-m</property>
+  <property>sim/multiplay/generic/float[2]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
-      <dep>9.3</dep>
+      <ind>0.1</ind>
+      <dep>5.2</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
-      <dep>15.5</dep>
+      <ind>0.225</ind>
+      <dep>10</dep>
+    </entry>
+    <entry>
+      <ind>0.3</ind>
+      <dep>12</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
+      <dep>13.6</dep>
     </entry>
   </interpolation>
   <center>
@@ -1447,21 +1474,28 @@
 
  <animation>
   <type>translate</type>
-  <object-name>rightmaingear</object-name>
   <object-name>RHLowerShock</object-name>
-  <property>gear/gear[2]/compression-m</property>
+  <property>sim/multiplay/generic/float[2]</property>
    <interpolation>
     <entry>
       <ind>0.0</ind>
       <dep>0</dep>
     </entry>
     <entry>
-      <ind>0.119</ind>
-      <dep>0.19</dep>
+      <ind>0.1</ind>
+      <dep>0.075</dep>
     </entry>
     <entry>
-      <ind>0.193</ind>
-      <dep>0.32</dep>
+      <ind>0.225</ind>
+      <dep>0.183</dep>
+    </entry>
+    <entry>
+      <ind>0.3</ind>
+      <dep>0.25</dep>
+    </entry>
+    <entry>
+      <ind>0.45</ind>
+      <dep>0.34</dep>
     </entry>
   </interpolation>
   <axis>
@@ -1474,7 +1508,7 @@
 <animation>
 	<type>spin</type>
 	<object-name>rightmaingear</object-name>
-	<property>gear/gear[2]/rollspeed-ms</property>
+	<property>sim/multiplay/generic/float[7]</property>
 	<factor>10</factor>
 	<center>
 		<x-m>2.369</x-m>
@@ -1554,7 +1588,7 @@
   <type>rotate</type>
   <object-name>rudder</object-name>
   <object-name>lightedrudder</object-name>
-  <property>controls/flight/rudder</property>
+  <property>surface-positions/rudder-pos-norm</property>
   <factor>20</factor>
   <offset-deg>0</offset-deg>   
   <center>
@@ -1572,7 +1606,7 @@
  <animation>
   <type>rotate</type>
   <object-name>lhaileron</object-name>
-  <property>controls/flight/aileron</property>
+  <property>surface-positions/left-aileron-pos-norm</property>
   <factor>20</factor>
   <center>
    <x-m>4.18</x-m>
@@ -1589,8 +1623,8 @@
  <animation>
   <type>rotate</type>
   <object-name>rhaileron</object-name>
-  <property>controls/flight/aileron</property>
-  <factor>-20</factor>
+  <property>surface-positions/right-aileron-pos-norm</property>
+  <factor>20</factor>
   <center>
    <x-m>4.18</x-m>
    <y-m>8.76</y-m>
@@ -1599,7 +1633,7 @@
   <axis>
    <x>0.34</x>
    <y>1</y>
-   <z>0.04</z>
+   <z>-0.04</z>
   </axis>
  </animation>
 
@@ -1674,7 +1708,7 @@
  <animation>
   <type>rotate</type>
   <object-name>lhibspoiler</object-name>
-  <property>surface-positions/ib-speedbrake-pos-norm</property>
+  <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
     <entry>
       <ind>0</ind>
@@ -1794,7 +1828,7 @@
  <animation>
   <type>rotate</type>
   <object-name>rhibspoiler</object-name>
-  <property>surface-positions/ib-speedbrake-pos-norm</property>
+  <property>sim/multiplay/generic/float[3]</property>
   <interpolation>
     <entry>
       <ind>0</ind>
@@ -1949,7 +1983,7 @@
   <type>translate</type>
   <object-name>no1reverser</object-name>
   <object-name>no2reverser</object-name>
-  <property>surface-positions/reverser-pos-norm</property>
+  <property>sim/multiplay/generic/float[4]</property>
   <interpolation>
     <entry>
       <ind>0</ind>

@@ -265,15 +265,40 @@
 			<desc>Set autobrakes to 0</desc>
 		</key>
 		<line>Speedbrakes:</line>
-		<line>The speedbrakes have 3 settings. At 0, they never extend.</line>
+		<line>The speedbrakes have 4 settings. At 0, they never extend.</line>
 		<line>At 1, they will only fully extend on the ground.</line>
 		<line>With the setting at 2, they will extend to about a third</line>
 		<line>out, and will go to full if the left gear compresses.</line>
-		<line>At 4, they are out fully.</line>
+		<line>At 3, they are out fully. (Use with caution!)</line>
 	</help>
 
 	<multiplay>
 		<chat_display>1</chat_display>
+	</multiplay>
+
+	<multiplay n="0">
+		<generic>
+			<int n="0" type="bool">0</int><!--beacon-->
+			<int n="1" type="bool">0</int><!--Landing light L-->
+			<int n="2" type="bool">0</int><!--Landing light C-->
+			<int n="3" type="bool">0</int><!--Landing light R-->
+			<int n="4" type="bool">0</int><!--wing lights-->
+			<int n="5" type="bool">1</int><!--Nav lights-->
+			<int n="6" type="bool">0</int><!--Logo lights-->
+			<int n="7" type="bool">0</int><!--Taxi lights-->
+			<int n="8" type="bool">1</int><!--Strobe-->
+
+			<!--float n="0"/>< alias="/gear/gear[0]/compression-m"-->
+			<!--float n="1" alias="/gear/gear[1]/compression-m"/>
+			<float n="2" alias="/gear/gear[2]/compression-m"/>
+			<float n="3" alias="/surface-positions/ib-speedbrake-pos-norm"/>
+			<float n="4" alias="/surface-positions/reverser-pos-norm"/-->
+			<!--float n="5"/>< alias="/gear/gear[0]/rollspeed-ms"-->
+			<!--float n="6" alias="/gear/gear[1]/rollspeed-ms"/>
+			<float n="7" alias="/gear/gear[2]/rollspeed-ms"/-->
+			<!--float n="8" alias="/gear/gear[0]/compression-norm"-->
+			<float n="9" type="float">0.2</float><!--cockpit lights-->
+		</generic>
 	</multiplay>
 
 </sim>
