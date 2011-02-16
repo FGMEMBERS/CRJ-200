@@ -41,7 +41,7 @@
 
 			<checkbox>
 				<label>Left</label>
-				<property>controls/switches/landing-light-l</property>
+				<property>sim/multiplay/generic/int[1]</property>
 				<binding>
 					<command>dialog-apply</command>
 				</binding>
@@ -50,7 +50,7 @@
 
 			<checkbox>
 				<label>Nose</label>
-				<property>controls/switches/landing-light-c</property>
+				<property>sim/multiplay/generic/int[2]</property>
 				<binding>
 					<command>dialog-apply</command>
 				</binding>
@@ -59,7 +59,7 @@
 
 			<checkbox>
 				<label>Right</label>
-				<property>controls/switches/landing-light-r</property>
+				<property>sim/multiplay/generic/int[3]</property>
 				<binding>
 					<command>dialog-apply</command>
 				</binding>
@@ -71,7 +71,7 @@
 
 		<checkbox>
 			<label>Wing Lights</label>
-			<property>controls/switches/wing-lights</property>
+			<property>sim/multiplay/generic/int[4]</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
@@ -80,7 +80,7 @@
 
 		<checkbox>
 			<label>Taxi Lights</label>
-			<property>controls/switches/taxi-lights</property>
+			<property>sim/multiplay/generic/int[7]</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
@@ -89,7 +89,7 @@
 
 		<checkbox>
 			<label>Logo Lights</label>
-			<property>controls/switches/logo-lights</property>
+			<property>sim/multiplay/generic/int[6]</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
@@ -116,7 +116,7 @@
 
 		<checkbox>
 			<label>Navigation</label>
-			<property>controls/switches/nav-lights</property>
+			<property>sim/multiplay/generic/int[5]</property>
 			<binding>
 				<command>dialog-apply</command>
 			</binding>
@@ -129,7 +129,7 @@
 			<layout>hbox</layout>
 			<text><label>Cockpit Lights</label></text>
 			<slider>
-				<property>controls/switches/dome-lights</property>
+				<property>sim/multiplay/generic/float[9]</property>
 				<binding>
 					<command>dialog-apply</command>
 				</binding>

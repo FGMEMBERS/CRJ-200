@@ -103,11 +103,11 @@ ethr.setIntValue(et_hr);
 }
 
 beacon_on = func {
-setprop("/sim/model/CRJ-200/lighting/beacon/state",1);
+setprop("/sim/multiplay/generic/int[0]",1);
 }
 
 beacon_off = func {
-setprop("/sim/model/CRJ-200/lighting/beacon/state",0);
+setprop("/sim/multiplay/generic/int[0]",0);
 }
 
 update_systems = func {
@@ -221,6 +221,15 @@ if(getprop("/sim/current-view/cockpit") == 1) {
 if(getprop("/sim/current-view/cockpit") == 0) {
  setprop("/instrumentation/mk-viii/speaker/volume",0);
 }
+
+setprop("sim/multiplay/generic/float[0]",getprop("gear/gear[0]/compression-m"));
+setprop("sim/multiplay/generic/float[1]",getprop("gear/gear[1]/compression-m"));
+setprop("sim/multiplay/generic/float[2]",getprop("gear/gear[2]/compression-m"));
+setprop("sim/multiplay/generic/float[8]",getprop("gear/gear[0]/compression-norm"));
+setprop("sim/multiplay/generic/float[5]",getprop("gear/gear[0]/rollspeed-ms"));
+setprop("sim/multiplay/generic/float[6]",getprop("gear/gear[1]/rollspeed-ms"));
+setprop("sim/multiplay/generic/float[7]",getprop("gear/gear[2]/rollspeed-ms"));
+setprop("sim/multiplay/generic/int[8]",getprop("sim/model/CRJ-200/lighting/strobe/state"));
 
 settimer(update_systems,0);
 }
