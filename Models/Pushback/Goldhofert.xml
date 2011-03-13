@@ -10,7 +10,7 @@
 (http://www.xpgoodwayteam.org/site_xpushback/) -->
 
   <model>
-    <path>Models/Airport/Pushback/warning-light.xml</path>
+    <path>Models/Airport/Pushback/Goldhofert-warning-light.xml</path>
     <offsets>
       <x-m>-12.22</x-m>
       <y-m>0.260</y-m>
@@ -20,7 +20,7 @@
   </model>
 
   <model>
-    <path>Models/Airport/Pushback/warning-light.xml</path>
+    <path>Models/Airport/Pushback/Goldhofert-warning-light.xml</path>
     <offsets>
       <x-m>-11.1</x-m>
       <y-m>0.260</y-m>
