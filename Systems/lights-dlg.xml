@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+	<name>lights-dlg</name>
+	<layout>vbox</layout>
+
+	<group>
+		<layout>hbox</layout>
+		<text>
+			<label>CRJ-200 Lights</label>
+		</text>
+
+		<empty>
+			<stretch>true</stretch>
+		</empty>
+
+		<button>
+			<legend/>
+			<key>Esc</key>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<border>2</border>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+	</group>
+
+	<hrule />
+
+	<group>
+		<layout>vbox</layout>
+
+		<text>
+			<label>Landing Lights</label>
+		</text>
+
+		<group>
+			<layout>hbox</layout>
+
+			<checkbox>
+				<label>Left</label>
+				<property>sim/multiplay/generic/int[1]</property>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+				<live>true</live>
+			</checkbox>
+
+			<checkbox>
+				<label>Nose</label>
+				<property>sim/multiplay/generic/int[2]</property>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+				<live>true</live>
+			</checkbox>
+
+			<checkbox>
+				<label>Right</label>
+				<property>sim/multiplay/generic/int[3]</property>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+				<live>true</live>
+			</checkbox>
+		</group>
+
+		<hrule/>
+
+		<checkbox>
+			<label>Wing Lights</label>
+			<property>sim/multiplay/generic/int[4]</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Taxi Lights</label>
+			<property>sim/multiplay/generic/int[7]</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Logo Lights</label>
+			<property>sim/multiplay/generic/int[6]</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Strobe</label>
+			<property>controls/switches/strobe</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Beacon</label>
+			<property>controls/switches/beacon</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<checkbox>
+			<label>Navigation</label>
+			<property>sim/multiplay/generic/int[5]</property>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+			<live>true</live>
+		</checkbox>
+
+		<hrule />
+
+		<group>
+			<layout>hbox</layout>
+			<text><label>Cockpit Lights</label></text>
+			<slider>
+				<property>sim/multiplay/generic/float[9]</property>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+			</slider>
+		</group>
+
+		<group>
+			<layout>hbox</layout>
+			<text><label>Cabin Lights</label></text>
+			<slider>
+				<property>controls/switches/cabin-lights</property>
+				<binding>
+					<command>dialog-apply</command>
+				</binding>
+			</slider>
+		</group>
+
+	</group>
+
+</PropertyList>
