@@ -16,7 +16,7 @@
 
 <model>
  <name>Pushback</name>
- <path>Aircraft\CRJ-200\Models\Pushback\Goldhofert.xml</path>
+ <path>Aircraft/CRJ-200/Models/Pushback/Goldhofert.xml</path>
  <offsets>
   <x-m>-10.1</x-m>
   <y-m>0</y-m>
