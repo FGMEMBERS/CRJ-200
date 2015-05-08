@@ -5,11 +5,11 @@
   <sim>
     <model>
       <livery>
-        <name type="string">Delta Express by Comair (Old)</name>
-        <texture>Liveries/COM.png</texture>
+        <name type="string">UTair Aviation</name>
+        <texture>Liveries/UTA-livery.png</texture>
       </livery>
       <lights>
-        <texture>Liveries/COM-lights.png</texture>
+        <texture>Liveries/UTA-lights.png</texture>
       </lights>
     </model>
   </sim>

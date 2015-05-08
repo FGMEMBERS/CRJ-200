@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Air Canada Jazz - Yellow</name>
+        <texture>Liveries/JZA_yellow.png</texture>
+      </livery>
+      <lights>
+        <texture>Liveries/JZA_yellow-lights.png</texture>
+      </lights>
+    </model>
+  </sim>
+
+</PropertyList>
+

@@ -6,10 +6,10 @@
     <model>
       <livery>
         <name type="string">Adria Airways (Star Alliance)</name>
-        <texture>Liveries/ADR-S.png</texture>
+        <texture>Liveries/ADR-SA.png</texture>
       </livery>
       <lights>
-        <texture>Liveries/ADR-S-lights.png</texture>
+        <texture>Liveries/ADR-SA-lights.png</texture>
       </lights>
     </model>
   </sim>
