@@ -1,0 +1,10 @@
+Wanted liveries (In order of want-ness):
+NWA Airlink (Pinnacle Airlines)
+AirTran JetConnect
+Tyrolean Airways
+US Airways Express (Old)
+
+CLH (Lufthansa CityLine) needs a real registration, D-ACPF is registered to a CRJ-700.
+
+Air Nostrum needs adaptation to new mapping. It is available on the main FG
+liveries site.

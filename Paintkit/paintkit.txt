@@ -1,0 +1,45 @@
+----LIVERYMAKER INSTRUCTIONS for CRJ-200----
+I used GIMP to modify and make liveries. This guide uses GIMP, if you use other programs, try to do
+the same thing, or you can send me the texture to make a lights for it if you don't know how.
+
+The paintkit file is crj-200.xcf. Please save your livery file as both an .xcf (for editing details
+later) and also as a .png in the format "[3-letter airline code*].png" in 2048 x 2048 resolution.
+
+----XML----
+1. Copy and paste one of the livery XML files.
+
+2. Rename it to the same 3-letter code you used before.
+
+3. Open it up, and edit the names of the files so that they match. Make sure to keep the Liveries/ 
+   part because this shows that the image file is below the models directory, in the Liveries folder.
+
+----WINGS----
+The wings use a separate texture. Use wings.xcf as a template for them. (If you can do awesome
+weathering effects, please email me, see address at bottom.)
+
+----NOTES----
+1. Once done with a finished livery, zip up the file and post it on the forums (in 787 and CRJ-200
+   dev topic), email it to me at nickyivyca [at] yahoo [dot] com, or upload it to the main FG
+   Liveries site (liveries.flightgear.org).
+
+2. Only airlines who own or have owned CRJ-200s (or also 100s) should have liveries made. See 
+   "wanted.txt" to see my most wanted list. Make sure you also use a real life registration number.
+
+3. I have been making most of my liveries from practically scratch. It's okay if you're building a
+   livery based on a GPL-licensed livery, as long as the livery remains accurate to the regional
+   carrier in the process.
+
+4. I won't be including weathering in the paintkit until I know how. The only places I've seen
+   weathering in photos is on the engines and on the wings. Some smoke on the APU vent (gray part
+   under right engine) is cool, though.
+
+*3-letter airline code is the 3 letter code of the regional airline that operates the aircraft-not
+   the master airline. Unless, of course, a master airline operates it on its own.
+
+-------------
+
+Nick I
+Current Developer of the CRJ-200 Project
+
+Questions?
+nickyivyca [at] yahoo [dot] com or you can reach me on the official forums with username nickyivyca.
