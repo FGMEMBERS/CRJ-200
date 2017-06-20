@@ -13,6 +13,19 @@
 	       <splash-texture>Aircraft/CRJ-200/splash.png</splash-texture>
 	</startup>
 
+	<tags>
+		<tag>transport</tag>
+		<tag>1990s</tag>
+		<tag>2000s</tag>
+		<tag>2010s</tag>
+		<tag>bombardier</tag>
+		<tag>glass-cockpit</tag>
+		<tag>retractable-gear</tag>
+		<tag>ifr</tag>
+		<tag>jet</tag>
+		<tag>twin-engine</tag>
+	</tags>
+
 
 	<menubar>
 		<default>
